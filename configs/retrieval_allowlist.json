@@ -1,0 +1,7 @@
+{
+  "allowed_paths": [
+    "examples/sources/canonical_source_1.md",
+    "examples/sources/canonical_source_2.md"
+  ],
+  "deny_by_default": true
+}

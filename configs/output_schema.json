@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GovernedOutput",
+  "type": "object",
+  "required": ["type", "observed", "derived", "inferred", "unknown", "abstained", "notes"],
+  "properties": {
+    "type": { "type": "string", "enum": ["governed_output"] },
+    "observed": { "type": "array", "items": { "type": "string" } },
+    "derived": { "type": "array", "items": { "type": "string" } },
+    "inferred": { "type": "array", "items": { "type": "string" } },
+    "unknown": { "type": "array", "items": { "type": "string" } },
+    "abstained": { "type": "boolean" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

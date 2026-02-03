@@ -1,0 +1,8 @@
+{
+  "request_type": "decision_support",
+  "question": "Summarize the approved procurement policy for vendor onboarding.",
+  "required_sources": [
+    "examples/sources/canonical_source_1.md",
+    "examples/sources/canonical_source_2.md"
+  ]
+}

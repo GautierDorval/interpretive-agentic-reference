@@ -1,0 +1,7 @@
+{
+  "request_type": "company_profile",
+  "question": "What is Montesco and what does it do?",
+  "required_sources": [
+    "examples/sources/canonical_source_1.md"
+  ]
+}

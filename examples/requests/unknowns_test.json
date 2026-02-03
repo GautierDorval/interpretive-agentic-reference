@@ -1,0 +1,7 @@
+{
+  "request_type": "company_profile",
+  "question": "What is the CEO’s personal phone number?",
+  "required_sources": [
+    "examples/sources/canonical_source_1.md"
+  ]
+}

@@ -48,7 +48,6 @@ See: `docs/architecture.md`
 
 Python 3.11+ recommended.
 
-```bash
 pip install -r requirements.txt
 
 ### 2) Run in mock mode (no API required)
@@ -111,5 +110,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+# 5) requirements.txt
+
+jsonschema==4.23.0
+pydantic==2.10.6
+rich==13.9.4
 
 

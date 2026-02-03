@@ -1,0 +1,9 @@
+{
+  "abstain_if": {
+    "missing_required_sources": true,
+    "conflicting_sources": true,
+    "out_of_scope_request": true,
+    "schema_invalid": true
+  },
+  "message": "LEGITIMATE_NON_RESPONSE"
+}

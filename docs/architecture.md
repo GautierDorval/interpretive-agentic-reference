@@ -19,3 +19,7 @@ Interpretive governance is expressed as:
 
 - explicit claim typing (observed / derived / inferred / unknown),
 - explicit non-response legitimacy.
+
+See also:
+- `configs/output_schema.json` (interpretive typing surface)
+- `configs/abstention_policy.json` (legitimate non-response)

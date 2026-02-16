@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/agentic-reference/abstention-policy.schema.json",
+  "title": "AbstentionPolicy",
+  "type": "object",
+  "required": [
+    "abstain_if",
+    "message"
+  ],
+  "properties": {
+    "abstain_if": {
+      "type": "object",
+      "required": [
+        "missing_required_sources",
+        "conflicting_sources",
+        "out_of_scope_request",
+        "schema_invalid"
+      ],
+      "properties": {
+        "missing_required_sources": {
+          "type": "boolean"
+        },
+        "conflicting_sources": {
+          "type": "boolean"
+        },
+        "out_of_scope_request": {
+          "type": "boolean"
+        },
+        "schema_invalid": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "message": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

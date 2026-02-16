@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/agentic-reference/retrieval-allowlist.schema.json",
+  "title": "RetrievalAllowlist",
+  "type": "object",
+  "required": [
+    "allowed_paths",
+    "deny_by_default"
+  ],
+  "properties": {
+    "allowed_paths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "deny_by_default": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

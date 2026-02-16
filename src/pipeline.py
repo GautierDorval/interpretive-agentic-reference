@@ -104,4 +104,6 @@ def run_pipeline(
             payload["unknown"] = []
         payload["unknown"].append(abstain_msg)
 
-    return True, payload
+    accepted = not bool(payload.get("abstained", False))
+
+    return accepted, payload

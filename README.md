@@ -4,7 +4,37 @@ This repository provides a **minimal executable reference pipeline** demonstrati
 **constraintive governance** operates as a **runtime substrate** for **interpretive governance**
 in **agentic-closed** systems.
 
-This is **not** a product, not a framework, and not a certification tool.
+This repository is **not**:
+- a product site,
+- a portfolio hub,
+- a normative standard,
+- a certification mechanism,
+- or a commercial routing surface.
+
+It is a **reference implementation repository**.
+
+## Role in the multisite ecosystem
+
+This repository belongs to a wider public ecosystem, but its role is intentionally narrow.
+It exists to show, in code, how an **agentic-closed execution regime** can enforce bounded
+retrieval, fixed runtime parameters, schema validation, and legitimate abstention.
+
+It must therefore be interpreted as:
+- **reference implementation** for an executable pattern,
+- **proof-of-mechanics** for constraintive governance under runtime control,
+- **non-normative companion** to higher-order doctrinal and governance surfaces.
+
+It must **not** be interpreted as:
+- the canonical doctrinal source for the whole ecosystem,
+- the place where multisite role allocation is defined,
+- a substitute for the normative manifest,
+- or a front-facing summary of all related sites and projects.
+
+For higher-order role allocation across sites and repositories, consult:
+- `https://gautierdorval.com/distributed-authority-map.json`
+
+For the normative definition of Interpretive Governance, consult:
+- `https://github.com/GautierDorval/interpretive-governance-manifest`
 
 ## What this demonstrates
 
@@ -24,6 +54,8 @@ It is a **runtime configuration and enforcement layer**.
 - No claim that a model “follows” governance.
 - No claim that outputs are “approved”.
 - No claim that this implementation is production-ready.
+- No claim that this repository defines the doctrinal perimeter of the ecosystem.
+- No claim that this repository can arbitrate authority conflicts between public surfaces.
 
 ## Regime boundary
 
@@ -35,6 +67,7 @@ This repository is explicitly scoped to **agentic-closed** systems.
 See:
 - `docs/regime-boundary.md`
 - `USAGE.md` (doctrinal usage notice)
+- `docs/non-normative-notice.md`
 - `docs/allowlist-maintenance.md` (non-normative operational notes)
 
 ## Architecture (single pipeline)
@@ -58,14 +91,18 @@ Typed request
 
 See: `docs/architecture.md`
 
-## Relationship to the manifest
+## Relationship to the manifest and multisite governance
 
 This repository is a **non-normative reference implementation**.
 The normative definition of Interpretive Governance is maintained in:
 
-https://github.com/GautierDorval/interpretive-governance-manifest
+- `https://github.com/GautierDorval/interpretive-governance-manifest`
 
-This repository must not redefine that manifest.
+The multisite allocation of roles across public sites and repositories is maintained in:
+
+- `https://gautierdorval.com/distributed-authority-map.json`
+
+This repository must not redefine either surface.
 
 ## Where Layer 1 shows up (interpretive typing)
 

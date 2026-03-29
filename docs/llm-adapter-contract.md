@@ -25,6 +25,16 @@ Even if an adapter calls a real provider, the reference pipeline still enforces:
 - output schema validation (invalid outputs are rejected),
 - policy-driven abstention (legitimate non-response).
 
+## Boundary note
+
+This contract only formalizes the adapter boundary for this repository.
+It does not create a standard for the full ecosystem,
+and it does not allocate authority between doctrinal, commercial, product,
+or repository surfaces.
+
+That higher-order allocation belongs elsewhere:
+- `https://gautierdorval.com/distributed-authority-map.json`
+
 ## Implementation note
 
 The adapter MAY be implemented as a thin wrapper around any provider SDK.

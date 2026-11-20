@@ -8,6 +8,7 @@ It is:
 - non-normative,
 - not a certification mechanism,
 - not a conformance claim,
+- not an evaluation of the meaning or fidelity of outputs (schema validation checks structure only),
 - not production-ready by default,
 - not an ecosystem front,
 - not a portfolio hub.

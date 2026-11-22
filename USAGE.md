@@ -19,6 +19,10 @@ this repository may demonstrate executable enforcement mechanics,
 but it does not allocate authority across the public ecosystem.
 That higher-order allocation belongs to the distributed authority layer.
 
+Any reuse must also preserve the following evaluation boundary:
+an output that passes schema validation has the expected structure;
+this does not show that it is faithful to its sources.
+
 Reference surface for multisite role arbitration:
 - `https://gautierdorval.com/distributed-authority-map.json`
 

@@ -25,6 +25,12 @@ Even if an adapter calls a real provider, the reference pipeline still enforces:
 - output schema validation (invalid outputs are rejected),
 - policy-driven abstention (legitimate non-response).
 
+## What schema validation does not establish
+
+A JSON string that matches `configs/output_schema.json` passes the structural check. That check does not establish that its content is supported by the allowlisted sources, nor that an item is correctly placed under `observed`, `derived`, `inferred` or `unknown`. Whether an output preserves the meaning of its sources is a separate assessment, described in the README section "Structure validation is not a fidelity assessment".
+
+`MockAdapter` (in `src/llm_adapter.py`) is a deterministic stub, not an LLM. It ignores the prompt and the runtime parameters and returns a fixed output, so that the pipeline can run without a provider.
+
 ## Boundary note
 
 This contract only formalizes the adapter boundary for this repository.

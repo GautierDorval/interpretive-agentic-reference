@@ -53,6 +53,7 @@ It is a **runtime configuration and enforcement layer**.
 - No claim of correctness, completeness, or safety.
 - No claim that a model “follows” governance.
 - No claim that outputs are “approved”.
+- No claim that a schema-valid output is faithful to its sources (see [Structure validation is not a fidelity assessment](#structure-validation-is-not-a-fidelity-assessment)).
 - No claim that this implementation is production-ready.
 - No claim that this repository defines the doctrinal perimeter of the ecosystem.
 - No claim that this repository can arbitrate authority conflicts between public surfaces.
@@ -112,6 +113,14 @@ The interpretive typing primitives (observed / derived / inferred / unknown) are
 - a governed output model: `src/types.py`
 - schema validation / rejection logic: `src/validator.py`
 - explicit legitimate non-response: `configs/abstention_policy.json`
+
+## Structure validation is not a fidelity assessment
+
+The pipeline validates the shape of an output: required fields, types and the observed / derived / inferred / unknown partition. It does not check that a statement placed under `observed` is supported by the allowlisted sources, that an inference is legitimate, or that the answer preserves the conditions and exclusions of its sources.
+
+Those questions concern the fidelity of the answer, defined as [interpretive fidelity](https://gautierdorval.com/en/definitions/interpretive-fidelity/) (entry term in the context of AI-generated answers: reconstruction fidelity). Assessing it requires preserved answers, their sources and a declared instrument, such as the public [fidelity rubric](https://github.com/GautierDorval/interpretive-governance-test-suite/blob/cf61a18ab86d547443d6c0962d4c20ad9ed796f1/scoring-models/fidelity-score.md) of the interpretive governance test suite, cited here at a fixed revision. This repository runs no such assessment.
+
+In mock mode, `MockAdapter` returns a fixed, schema-valid stub without calling any model. Its output shows that the enforcement mechanics run; it is not evidence about how a model answers or about the fidelity of an answer.
 
 ## Quickstart
 
